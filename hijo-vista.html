@@ -1,0 +1,42 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../paper-button/paper-button.html ">
+<link rel="import" href="../paper-styles/default-theme.html ">
+
+<dom-module id="hijo-vista">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      paper-button{
+        background-color: var(--primary-color);
+        color: white;
+      }
+    </style>
+   <h1>Bienvenido</h1>
+   <p>Para ver la lista de datos da click al boton "Mostrar Lista" y si deseas ver la tabla de datos da click al boton "Mostrar Tabla"</p>
+   <paper-button >Mostrar lista</paper-button>
+   <paper-button >Mostrar Tabla</paper-button>
+  </template>
+
+  <script>
+    /**
+     * `hijo-vista`
+     * &#39;hijo vista con titulo y 2 botones&#39;
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class HijoVista extends Polymer.Element {
+      static get is() { return 'hijo-vista'; }
+      static get properties() {
+        return {
+          
+        };
+      }
+    }
+
+    window.customElements.define(HijoVista.is, HijoVista);
+  </script>
+</dom-module>
